@@ -1,47 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Calculator!</title>
-    <link rel="stylesheet" href="../CSS/Task3.css" />
-  </head>
-  <body>
-    <div id="container">
-      
-      <div id="calculator">
-        <input type="text" class="display" />
-        <div class="row">
-          <button class="button wide">AC</button>
-          <button class="button">%</button>
-          <button class="button">/</button>
-          <!-- <button class="button">X</button> -->
-        </div>
-        <div class="row">
-          <button class="button">7</button>
-          <button class="button">8</button>
-          <button class="button">9</button>
-          <button class="button">+</button>
-        </div>
-        <div class="row">
-          <button class="button">4</button>
-          <button class="button">5</button>
-          <button class="button">6</button>
-          <button class="button">-</button>
-        </div>
-        <div class="row">
-          <button class="button">1</button>
-          <button class="button">2</button>
-          <button class="button">3</button>
-          <button class="button">*</button>
-        </div>
-        <div class="row">
-          <button class="button wide">0</button>
-          <button class="button">.</button>
-          <button class="button">=</button>
-        </div>
-      </div>
-    </div>
-    <script src="../JS/calci.JS"></script>
-  </body>
-</html>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #d0d4d5; */
+    background-color: rgb(159, 159, 159);
+    background: linear-gradient(126deg, rgba(138,74,181,1) 0%, rgba(33,165,165,1) 87%, rgba(252,176,69,1) 100%);
+
+}
+#calculator{
+     background-color: white;
+    height: 450px;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.8) 0px 15px 12px;
+    background: rgb(237, 222, 248);
+}
+.display{
+    padding: 16px 33px;
+    text-align: right;
+    margin-bottom: 17px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.button{
+    margin: 7px 2px;
+    padding: 11px 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    /* border: none; */
+    border-radius: 8px;
+font-size: 1.1rem;
+}
+.wide {
+    padding: 11px 50px;
+}
+
